@@ -1,0 +1,12 @@
+{
+  "clientId": "ABC-12345",
+  "firstName": "João",
+  "lastName": "Silva",
+  "emailAddress": "joao.silva@example.com",
+  "phoneNumber": "5511999998888",
+  "addressLine": "Rua das Acácias, 123",
+  "city": "Campinas",
+  "state": "SP",
+  "codeProduct": 101,
+  "isActive": true
+}
