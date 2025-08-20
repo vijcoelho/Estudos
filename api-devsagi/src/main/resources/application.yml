@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: api-devsagi
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: devsagi
+      authentication-database: admin
