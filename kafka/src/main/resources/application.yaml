@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: kafka
+  kafka:
+    bootstrap-servers: "localhost:9092"
+    consumer:
+      properties:
+        spring.json.trusted.packages: "*"
+      group-id: "user-group"
+      auto-offset-reset: earliest
+      enable-auto-commit: true
