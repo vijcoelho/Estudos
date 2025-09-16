@@ -11,11 +11,11 @@ async function findById(id) {
 }
 
 async function create(data) {
-    const user = new User({
-        id: uuidv4(),
+    const user = {
         name: data.name,
-        email: data.email
-    });
+        email: data.email,
+        password: data.password
+    };
 
     return userRepository.create(user);
 }
