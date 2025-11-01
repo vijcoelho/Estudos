@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: api-devs
+  datasource:
+    url: jdbc:postgresql://localhost:5432/devs-api
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
+    connection-timeout: 5000
+
+app:
+  queue:
+    main: fila-teste.queue
