@@ -1,13 +1,11 @@
 package com.example.apidevs.messaging.producer;
 
-import com.example.apidevs.messaging.producer.payload.TestePayload;
+import com.example.apidevs.messaging.producer.payload.ProductPayload;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.AmqpException;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -19,7 +17,7 @@ public class Producer {
     @Value("${app.queue.main}")
     private String queue;
 
-    public void sendMessage(final TestePayload message) {
+    public void sendMessage(final ProductPayload message) {
         log.info("Iniciando producer com a mensagem {}", message);
 
         try {

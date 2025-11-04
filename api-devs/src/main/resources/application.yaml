@@ -20,4 +20,4 @@ spring:
 
 app:
   queue:
-    main: fila-teste.queue
+    main: product.queue
