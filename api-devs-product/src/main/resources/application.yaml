@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: api-devs-product
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: product
+      username: admin
+      password: password
+      authentication-database: admin
+  rabbitmq:
+    port: 5672
+    host: localhost
+    username: admin
+    password: admin
+
+app:
+  queue:
+    consumer: product.queue
+
+server:
+  port: 8081
